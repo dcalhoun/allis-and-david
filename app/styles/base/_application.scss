@@ -26,6 +26,11 @@
 
 .nav-primary {}
 
-.content-primary {}
+.welcome {
+  @include position(absolute, 50% 0 0 0);
+  @include transform(translateY(-50%));
+  text-align: center;
+  width: 100%;
+}
 
 .footer-primary {}
