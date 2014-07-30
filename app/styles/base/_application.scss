@@ -22,15 +22,61 @@
  * ---------------------------------------------------------------------------
  */
 
-.header-primary {}
+body {
+  background: black;
 
-.nav-primary {}
+  &:after {
+    @include position(fixed, 0 0 0 0);
+    content: "";
+    display: block;
+    background: url("../images/allis-and-david.jpg") no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5;
 
-.welcome {
-  @include position(absolute, 50% 0 0 0);
-  @include transform(translateY(-50%));
-  text-align: center;
-  width: 100%;
+    @include media($large-up) {
+      opacity: 1;
+    }
+  }
 }
 
-.footer-primary {}
+.nav-primary {
+  display: none;
+}
+
+.header-primary {
+  text-align: center;
+}
+
+.welcome {
+  @include position(fixed, 50% null null 50%);
+  @include transform(translate(-50%, -50%));
+  color: white;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+
+  @include media($medium-up) {
+    bottom: 0.5em;
+    top: auto;
+  }
+
+  @include media($large-up) {
+    @include position(absolute, auto auto 1em 1em);
+    @include transform(none);
+    width: auto;
+  }
+
+  h1 {
+    color: white;
+    font-size: 3em;
+    font-family: $script;
+    margin-bottom: 0.15em;
+    line-height: 1.15em;
+
+    .amp {
+      display: block;
+      font-size: 0.5em;
+      line-height: 1.45em;
+    }
+  }
+}

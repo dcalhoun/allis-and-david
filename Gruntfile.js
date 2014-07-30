@@ -50,7 +50,7 @@ module.exports = function (grunt) {
         livereload: 35729,
         // Change hostname to '0.0.0.0' to access the server
         // from another device on the same network (e.g. – iPhone)
-        hostname: 'localhost'
+        hostname: '0.0.0.0'
       },
       livereload: {
         options: {

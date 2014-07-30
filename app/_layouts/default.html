@@ -21,8 +21,10 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    {% include shared/header.html %}
     {% include shared/nav.html %}
+    {% if page.url != "/" %}
+      {% include shared/header.html %}
+    {% endif %}
     {{ content }}
     {% include shared/footer.html %}
 
