@@ -284,6 +284,10 @@ module.exports = function (grunt) {
               replacement: '$1http://dcalhoun.github.io/allis-and-david/scripts/'
             },
             {
+              match: /("|'?)\/?fonts\//g,
+              replacement: '$1http://dcalhoun.github.io/allis-and-david/fonts/'
+            },
+            {
               match: /(<a[^>]*href="?)(\/)/g,
               replacement: '$1http://dcalhoun.github.io/allis-and-david/'
             },
