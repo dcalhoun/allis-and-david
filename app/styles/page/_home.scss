@@ -1,0 +1,48 @@
+.home {
+  background: black;
+
+  &:after {
+    @include position(fixed, 0 0 0 0);
+    content: "";
+    display: block;
+    background: url("../images/allis-and-david.jpg") no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.65;
+    z-index: -1;
+  }
+
+  .nav-primary a {
+    @include link-variant($white);
+
+    &.active {
+      @include link-variant($yellow-light);
+    }
+  }
+
+  .welcome {
+    @include animation-delay(0.75s);
+    @include animation-duration(3s);
+    @include position(fixed, 50% null null 50%);
+    @include transform(translate(-50%, -50%));
+    color: $white;
+    padding: 0 0.75em;
+    text-align: center;
+
+    h1 {
+      font-size: 4em;
+      font-family: $script;
+      margin-bottom: 0.15em;
+      line-height: 1em;
+
+      @include media($medium-up) {
+        font-size: 6em;
+      }
+
+      .amp {
+        display: block;
+        font-size: 0.75em;
+        line-height: 1.25em;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<article class="post">
+  {% if page.url != "/" %}
+    {% include shared/header.html %}
+  {% endif %}
+
+  {{ content }}
+</article>

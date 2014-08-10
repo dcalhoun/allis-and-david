@@ -22,61 +22,69 @@
  * ---------------------------------------------------------------------------
  */
 
-body {
-  background: black;
+.nav-primary {
+  @include animation-delay(0.75s);
+  @include position(fixed, 0 0 0 0);
+  @include transform(translateY(-100%));
+  @include transition(opacity 0.3s ease-in-out);
+  background: transparentize($black, 0.5);
+  font-size: 3em;
+  font-weight: 300;
+  padding-top: 1.25em;
+  opacity: 0;
+  overflow-y: auto;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 10;
+  -webkit-overflow-scrolling: touch;
 
-  &:after {
-    @include position(fixed, 0 0 0 0);
-    content: "";
+  // @include media($large-up) {
+  //   @include transform(none);
+  //   background: transparent;
+  //   bottom: auto;
+  //   left: auto;
+  //   font-size: 0.85em;
+  //   opacity: 1;
+  //   padding-top: 0;
+  //   right: auto;
+  //   top: 1em;
+  // }
+
+  $nav-border: 1px solid transparentize($white, 0.85);
+
+  a {
     display: block;
-    background: url("../images/allis-and-david.jpg") no-repeat center center fixed;
-    background-size: cover;
-    opacity: 0.5;
+    border-bottom: $nav-border;
+    padding: 0.25em;
 
-    @include media($large-up) {
-      opacity: 1;
+    &:first-child {
+      border-top: $nav-border;
+    }
+
+    &.active {
+      @include link-variant($yellow-light);
     }
   }
 }
 
-.nav-primary {
-  display: none;
+.nav-primary.is-active {
+  @include transform(none);
+  opacity: 1;
+}
+
+body.nav-active {
+  &:after,
+  .content-primary {
+    -webkit-filter: blur(2px);
+  }
 }
 
 .header-primary {
   text-align: center;
 }
 
-.welcome {
-  @include position(fixed, 50% null null 50%);
-  @include transform(translate(-50%, -50%));
-  color: white;
-  text-align: center;
-  width: 100%;
-  z-index: 10;
-
-  @include media($medium-up) {
-    bottom: 0.5em;
-    top: auto;
-  }
-
-  @include media($large-up) {
-    @include position(absolute, auto auto 1em 1em);
-    @include transform(none);
-    width: auto;
-  }
-
-  h1 {
-    color: white;
-    font-size: 3em;
-    font-family: $script;
-    margin-bottom: 0.15em;
-    line-height: 1.15em;
-
-    .amp {
-      display: block;
-      font-size: 0.5em;
-      line-height: 1.45em;
-    }
-  }
+.post {
+  margin: 2em auto;
+  max-width: em(600);
+  padding: 0 2em;
 }

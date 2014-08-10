@@ -12,4 +12,5 @@ $large: em(860);
 
 $small-only: new-breakpoint(max-width $medium - 1);
 $medium-up: new-breakpoint(min-width $medium);
+$medium-only: new-breakpoint(min-width $medium max-width $large - 1);
 $large-up: new-breakpoint(min-width $large);

@@ -7,26 +7,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
     {% include shared/styles.html %}
-
-    <!-- build:js({app,.tmp}) /scripts/modernizr.js -->
-    <script src="/vendor/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
   </head>
 
-  <body>
+  <body class="{{ page.body_class }}">
     <!--[if lt IE 9]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     {% include shared/nav.html %}
-    {% if page.url != "/" %}
-      {% include shared/header.html %}
-    {% endif %}
-    {{ content }}
-    {% include shared/footer.html %}
+    <div class="content-primary">
+      {{ content }}
+    </div>
 
     {% include shared/scripts.html %}
     {% include shared/google-analytics.html %}

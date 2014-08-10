@@ -8,3 +8,33 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap;
 }
+
+.btn {
+  background-color: $base-button-color;
+  border-radius: $base-border-radius;
+  color: white;
+
+  &:hover {
+    background-color: $hover-button-color;
+    color: white;
+  }
+}
+
+.btn-nav-toggle {
+  @extend %button;
+  @include position(fixed, 0 null null 0);
+  color: $white;
+  font-size: 1.75em;
+  padding: 0.5em;
+  z-index: 200;
+
+  // @include media($large-up) {
+  //   display: none;
+  // }
+
+  &.is-active  {
+    .fa-bars:before {
+      content: '\f00d';
+    }
+  }
+}
