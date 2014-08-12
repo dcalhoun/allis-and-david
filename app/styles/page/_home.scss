@@ -21,7 +21,7 @@
     h1 {
       font-size: 4em;
       font-family: $script;
-      margin-bottom: 0.15em;
+      margin: 0 0 0.15em;
       line-height: 1em;
 
       @include media($medium-up) {
