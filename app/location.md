@@ -3,4 +3,4 @@ layout: article
 title: "Location"
 ---
 
-The location.
+The Village Chapel.

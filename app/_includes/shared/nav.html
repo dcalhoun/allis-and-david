@@ -1,4 +1,7 @@
-<button type="button" id="js-nav-toggle" class="btn-nav-toggle"><i class="fa fa-bars"></i></button>
+<button type="button" id="js-nav-toggle" class="btn-nav-toggle fadeInDown animated" data-toggle="flyover" data-target="#nav-primary">
+  <i class="fa fa-bars"></i>
+  <span class="text"> Menu</span>
+</button>
 
 <nav id="nav-primary" class="nav-primary">
   <a href="/"         class="{% if page.url == '/' %}active{% endif %}          ">Home</a>

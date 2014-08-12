@@ -1,6 +1,4 @@
 .home {
-  background: black;
-
   &:after {
     @include position(fixed, 0 0 0 0);
     content: "";
@@ -9,14 +7,6 @@
     background-size: cover;
     opacity: 0.65;
     z-index: -1;
-  }
-
-  .nav-primary a {
-    @include link-variant($white);
-
-    &.active {
-      @include link-variant($yellow-light);
-    }
   }
 
   .welcome {

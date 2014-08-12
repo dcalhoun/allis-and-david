@@ -61,3 +61,11 @@
 .no-padding {
   padding: 0;
 }
+
+.br-small {
+  display: block;
+
+  @include media($medium-up) {
+    display: none;
+  }
+}
