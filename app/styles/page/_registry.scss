@@ -1,0 +1,23 @@
+.registry {
+  .post {
+    max-width: em(1100);
+    text-align: center;
+  }
+
+  .btn-logo {
+    display: block;
+    max-height: em(150);
+    margin: 3em auto;
+
+    @include media($small-only) {
+      max-width: em(200);
+    }
+
+    @include media($medium-up) {
+      display: inline-block;
+      margin: 2em 2.25%;
+      vertical-align: middle;
+      width: 20%;
+    }
+  }
+}

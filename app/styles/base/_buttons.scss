@@ -55,3 +55,18 @@ input[type="submit"] {
     content: '\f00d';
   }
 }
+
+.btn-logo {
+  @extend %button;
+  @include transition(opacity 0.3s ease-in-out);
+  padding: 0;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  > img {
+    max-height: 100%;
+    width: auto;
+  }
+}

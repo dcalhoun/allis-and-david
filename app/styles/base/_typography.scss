@@ -96,4 +96,13 @@ cite {
 
 .page-title {
   margin: 1.5em 0;
+
+  @include media($medium-up) {
+    margin-top: 0;
+  }
+}
+
+.empty-text {
+  font-style: italic;
+  text-align: center;
 }
