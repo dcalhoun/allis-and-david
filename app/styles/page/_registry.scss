@@ -1,7 +1,14 @@
 .registry {
   .post {
-    max-width: em(1100);
+    max-width: rem(1800);
     text-align: center;
+  }
+
+  .locations {
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    vertical-align: center;
   }
 
   .btn-logo {
@@ -14,10 +21,9 @@
     }
 
     @include media($medium-up) {
-      display: inline-block;
-      margin: 2em 2.25%;
+      margin: 2em 2%;
       vertical-align: middle;
-      width: 20%;
+      width: 15%;
     }
   }
 }
