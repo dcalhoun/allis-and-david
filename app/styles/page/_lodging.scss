@@ -1,0 +1,21 @@
+.lodging {
+  .post {
+    max-width: 70rem;
+  }
+
+  .locations {
+    text-align: center;
+
+    @include media($medium-up) {
+      @include display(flex);
+      @include justify-content(center);
+    }
+
+    .location {
+      @include media($medium-up) {
+        margin: 2em;
+        width: calc(50% - 4em);
+      }
+    }
+  }
+}

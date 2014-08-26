@@ -103,3 +103,12 @@ body.flyover-in {
   max-width: em(600);
   padding: 0 2em;
 }
+
+iframe,
+img {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
