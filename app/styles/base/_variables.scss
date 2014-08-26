@@ -1,12 +1,13 @@
 // Typography
 $sans-serif: "Open Sans", $helvetica;
-$serif: $georgia;
+$serif: "adobe-garamond-pro", $georgia;
 $script: "rochester-regular", serif;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 
 // Sizes
-$base-font-size: 1em;
+$em-base: 18;
+$base-font-size: 1.15em;
 $base-line-height: $base-font-size * 1.5;
 $unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
 $header-line-height: $base-font-size * 1.25;
@@ -16,7 +17,7 @@ $base-border-radius: em(3);
 $blue:          #ACD1CA;
 $red:           #DA4C43;
 $red-light:     #DAA031;
-$yellow-light:  #FFF6BF;
+$yellow:  #FFF6BF;
 $green-light:   #E6EFC2;
 $beige:         #FAF1CF;
 
@@ -34,7 +35,7 @@ $base-background-color: $gray-darker;
 
 // Font Colors
 $base-font-color: $white;
-$base-accent-color: $blue;
+$base-accent-color: $yellow;
 
 // Link Colors
 $base-link-color: $base-accent-color;
@@ -46,9 +47,9 @@ $hover-button-color: $hover-link-color;
 $base-border-color: $gray-light;
 
 // Flash Colors
-$alert-color: $yellow-light;
+$alert-color: $yellow;
 $error-color: $red-light;
-$notice-color: $yellow-light;
+$notice-color: $yellow;
 $success-color: $green-light;
 
 // Forms

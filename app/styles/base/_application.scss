@@ -27,7 +27,7 @@
   @include transform(translateY(-100%));
   @include transition(opacity 0.3s ease-in-out);
   background: transparentize($black, 0.4);
-  font-size: 3em;
+  font-size: 2.75em;
   padding-top: 4rem;
   opacity: 0;
   overflow-y: auto;
@@ -52,6 +52,7 @@
     border-bottom: $nav-border;
     padding: 0.25em;
     vertical-align: middle;
+    text-decoration: none;
 
     @include media($medium-up) {
       width: 50%;
@@ -66,7 +67,7 @@
     }
 
     &.active {
-      @include link-variant($yellow-light);
+      @include link-variant($yellow);
     }
   }
 }
@@ -100,7 +101,7 @@ body.flyover-in {
 
 .post {
   margin: 2em auto;
-  max-width: em(600);
+  max-width: em(700);
   padding: 0 2em;
 }
 

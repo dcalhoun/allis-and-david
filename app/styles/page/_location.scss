@@ -1,0 +1,24 @@
+.location {
+  text-align: center;
+
+  .location {
+    border-top: 1px solid $base-border-color;
+    padding: 1em 0;
+
+    &:last-child {
+      border-bottom: 1px solid $base-border-color;
+    }
+
+    img {
+      max-width: em(300);
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
