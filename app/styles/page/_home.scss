@@ -1,9 +1,9 @@
 .home {
-  &:after {
+  &::before {
     @include position(fixed, 0 0 0 0);
     content: "";
     display: block;
-    background: url("../images/allis-and-david-bw-prep.jpg") no-repeat center center fixed;
+    background: url("../images/allis-and-david-bw.jpg") no-repeat center center fixed;
     background-size: cover;
     opacity: 0.5;
     z-index: -1;

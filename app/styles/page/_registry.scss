@@ -5,10 +5,13 @@
   }
 
   .locations {
-    @include display(flex);
-    @include align-items(center);
-    @include justify-content(center);
     vertical-align: center;
+
+    @include media($medium-up) {
+      @include display(flex);
+      @include align-items(center);
+      @include justify-content(center);
+    }
   }
 
   .btn-logo {
