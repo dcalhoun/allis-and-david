@@ -22,6 +22,12 @@
  * ---------------------------------------------------------------------------
  */
 
+.browsehappy {
+  background: $red;
+  text-align: center;
+  z-index: 10;
+}
+
 .nav-primary {
   @include position(fixed, 0 0 0 0);
   @include transform(translateY(-100%));
@@ -38,7 +44,7 @@
 
   @include media($medium-up) {
     @include display(flex);
-    @include flex-flow(column);
+    @include flex-direction(column);
     @include align-items(center);
     @include justify-content(center);
   }
