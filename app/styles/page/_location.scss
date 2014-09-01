@@ -2,12 +2,8 @@
   text-align: center;
 
   .location {
-    border-top: 1px solid $base-border-color;
+    margin-bottom: 2em;
     padding: 1em 0;
-
-    &:last-child {
-      border-bottom: 1px solid $base-border-color;
-    }
 
     img {
       max-width: em(300);

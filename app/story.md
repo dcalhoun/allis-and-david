@@ -2,12 +2,13 @@
 layout: article
 title: "Our Story"
 ---
+![Allis & David](/images/allis-and-david-stairs.jpg)
 
 David & Allis met for the first time in February 2012 when their mutual friend, Sadie, invited
-Allis to come to her small group. David, leaning against the pantry in the
-kitchen of the home clutching his Nalgene, immediately perked up as Allis entered
-the room for the first time. Allis took note of him. She continued to visit
-the small group, becoming part of the close-knit group. Jump forward to May 2012
+Allis to visit her small group. David, leaning against the kitchen pantry
+clutching his Nalgene, immediately perked up as Allis entered the room for the
+first time. Allis took note of him. She continued to visit the small group,
+becoming part of the close-knit group. Jump forward to May 2012
 to find David asking Allis to a show at the High Watt. Allis said yes & off
 they went. The two made things official on August 12, 2012.
 
