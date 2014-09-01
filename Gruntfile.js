@@ -277,23 +277,23 @@ module.exports = function (grunt) {
           patterns: [
             {
               match: /("|'?)\/?styles\//g,
-              replacement: '$1http://dcalhoun.github.io/allis-and-david/styles/'
+              replacement: '$1http://allisanddavid.info/styles/'
             },
             {
               match: /("|'?)\/?scripts\//g,
-              replacement: '$1http://dcalhoun.github.io/allis-and-david/scripts/'
+              replacement: '$1http://allisanddavid.info/scripts/'
             },
             {
               match: /("|'?)\/?fonts\//g,
-              replacement: '$1http://dcalhoun.github.io/allis-and-david/fonts/'
+              replacement: '$1http://allisanddavid.info/fonts/'
             },
             {
               match: /(<a[^>]*href="?)(\/)/g,
-              replacement: '$1http://dcalhoun.github.io/allis-and-david/'
+              replacement: '$1http://allisanddavid.info/'
             },
             {
               match: /(<form[^>]*action="?)(\/)/g,
-              replacement: '$1http://dcalhoun.github.io/allis-and-david/'
+              replacement: '$1http://allisanddavid.info/'
             }
           ]
         },
