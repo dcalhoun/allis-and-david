@@ -403,7 +403,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'check',
+    // 'check',
     'test',
     'build'
   ]);
