@@ -88,14 +88,14 @@
   }
 }
 
-body:after,
+body::after,
 .content-primary {
   @include transition(-webkit-filter 0.3s ease-in-out);
 }
 
 
 body.flyover-in {
-  &:after,
+  &::after,
   .content-primary {
     -webkit-filter: blur(3px);
   }

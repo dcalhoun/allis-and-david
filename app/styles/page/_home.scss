@@ -1,5 +1,5 @@
 .home {
-  &::before {
+  &::after {
     @include position(fixed, 0 0 0 0);
     content: "";
     display: block;
