@@ -68,6 +68,7 @@
     @include link-variant($white);
     display: block;
     border-bottom: $nav-border;
+    font-weight: 300;
     padding: 0.25em;
     vertical-align: middle;
     text-decoration: none;

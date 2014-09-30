@@ -56,6 +56,7 @@ p {
 a {
   @include transition(color 0.1s linear);
   color: $base-link-color;
+  font-weight: 500;
 
   &:hover {
     color: $hover-link-color;
@@ -108,4 +109,12 @@ cite {
 .empty-text {
   font-style: italic;
   text-align: center;
+}
+
+.credit {
+  font-size: 0.65em;
+
+  a {
+    text-decoration: none;
+  }
 }

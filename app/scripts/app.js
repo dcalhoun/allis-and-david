@@ -11,6 +11,12 @@
         clearInterval(tadaMenu);
       });
     }
+
+    $(".story img").each(function() {
+      $el = $(this);
+      title = $el.attr("title");
+      $el.after('<span class="credit">Photography by <a href="http://sadieschuck.com/">Sadie Schuck</a>.</span>');
+    });
   });
 
   var wiggle = function() {

@@ -3,7 +3,7 @@ layout: article
 title: "Our Story"
 body_class: "story"
 ---
-![Allis & David](/images/allis-and-david-standing.jpg)
+![Allis & David](/images/allis-and-david-standing.jpg "Allis & David")
 
 David & Allis met for the first time in February 2012 when their mutual friend, Sadie, invited
 Allis to visit her small group. David, leaning against the kitchen pantry
@@ -18,7 +18,7 @@ favorite restaurants.
 
 ### Georgia Allis Kersten
 
-![Allis & David](/images/allis.jpg)
+![Allis & David](/images/allis.jpg "Allis")
 
 Allis grew up in Nashville, TN. She earned her nursing degree from Trevecca
 Nazarene University & is currently working at the St. Thomas Hospital for
@@ -26,7 +26,7 @@ Spinal Surgery.
 
 ### David Paul Calhoun
 
-![Allis & David](/images/david.jpg)
+![Allis & David](/images/david.jpg "David")
 
 David was born & raised in Jackson, MS. He moved to Nashville in 2009 after
 graduating from the University of Alabama. David is a designer & developer at

@@ -61,4 +61,17 @@
       }
     }
   }
+
+  .credit {
+    @include position(absolute, null null 0.25em null);
+
+    @include media($small-only) {
+      text-align: center;
+      width: 100%;
+    }
+
+    @include media($medium-up) {
+      right: 0.5em;
+    }
+  }
 }
