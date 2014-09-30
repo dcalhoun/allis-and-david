@@ -63,6 +63,8 @@
   }
 
   .credit {
+    @include animation-delay(0.75s);
+    @include animation-duration(3s);
     @include position(absolute, null null 0.25em null);
 
     @include media($small-only) {
