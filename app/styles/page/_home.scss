@@ -9,6 +9,10 @@
     z-index: -1;
   }
 
+  .nav-toggle-wrap {
+    background: transparent;
+  }
+
   .welcome {
     @include animation-delay(0.75s);
     @include animation-duration(3s);

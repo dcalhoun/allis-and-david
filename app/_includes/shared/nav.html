@@ -1,7 +1,9 @@
-<button type="button" id="js-nav-toggle" class="btn-nav-toggle {% if page.url == '/' %}fadeInDown animated{% endif %}" data-toggle="flyover" data-target="#nav-primary">
-  <i class="fa fa-bars"></i>
-  <span class="text"> Menu</span>
-</button>
+<div class="nav-toggle-wrap">
+  <button type="button" id="js-nav-toggle" class="btn-nav-toggle {% if page.url == '/' %}fadeInDown animated{% endif %}" data-toggle="flyover" data-target="#nav-primary">
+    <i class="fa fa-bars"></i>
+    <span class="text"> Menu</span>
+  </button>
+</div>
 
 <nav id="nav-primary" class="nav-primary">
   <a href="/"         class="{% if page.url == '/' %}active{% endif %}          ">Home</a>

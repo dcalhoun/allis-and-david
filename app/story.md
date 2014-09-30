@@ -16,7 +16,7 @@ they went. The two made things official on August 12, 2012.
 David asked Allis to marry him a year & a half later on the patio of Caffé Nonna, one their
 favorite restaurants.
 
-### About Georgia Allis Kersten
+### Georgia Allis Kersten
 
 ![Allis & David](/images/allis.jpg)
 
@@ -24,7 +24,7 @@ Allis grew up in Nashville, TN. She earned her nursing degree from Trevecca
 Nazarene University & is currently working at the St. Thomas Hospital for
 Spinal Surgery.
 
-### About David Paul Calhoun
+### David Paul Calhoun
 
 ![Allis & David](/images/david.jpg)
 

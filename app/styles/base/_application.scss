@@ -28,6 +28,18 @@
   z-index: 10;
 }
 
+.nav-toggle-wrap {
+  @include position(fixed, 0 0 null 0);
+  background: transparentize($base-background-color, 0.1);
+  height: 3.15em;
+  width: 100%;
+  z-index: 200;
+
+  @include media($medium-up) {
+    background: transparent;
+  }
+}
+
 .nav-primary {
   @include position(fixed, 0 0 0 0);
   @include transform(translateY(-100%));
@@ -108,7 +120,7 @@ body.flyover-in {
 .post {
   margin: 2em auto;
   max-width: em(700);
-  padding: 0 2em;
+  padding: 0 1em;
 }
 
 iframe,

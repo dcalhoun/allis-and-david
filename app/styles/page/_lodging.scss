@@ -1,11 +1,10 @@
 .lodging {
   .post {
     max-width: 70rem;
+    text-align: center;
   }
 
   .locations {
-    text-align: center;
-
     @include media($medium-up) {
       @include display(flex);
       @include justify-content(center);
@@ -15,6 +14,42 @@
       @include media($medium-up) {
         margin: 2em;
         width: calc(50% - 4em);
+      }
+
+      .map {
+        margin: 0 0 0.75em 0;
+
+        iframe {
+          vertical-align: top;
+        }
+      }
+    }
+
+    .location.coming-soon {
+      @include user-select(none);
+      pointer-events: none;
+      position: relative;
+
+      &::before {
+        @include position(absolute, 0 0 0 0);
+        content: '';
+        background: transparentize($base-background-color, 0.25);
+      }
+
+      .map::before {
+        @include position(absolute, 50% null null 50%);
+        @include transform(translate(-50%, -50%));
+        background: $white;
+        border-radius: $base-border-radius;
+        color: $base-background-color;
+        content: "Coming soon";
+        font-size: 0.85em;
+        font-weight: 500;
+        padding: 0.15em 0.35em;
+        opacity: 1;
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 100;
       }
     }
   }
