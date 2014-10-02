@@ -16,7 +16,7 @@
   .welcome {
     @include animation-delay(0.75s);
     @include animation-duration(3s);
-    @include position(fixed, null null 1em null);
+    @include position(fixed, null null 1.5em null);
     color: $white;
     padding: 0 0.75em;
     text-align: center;
@@ -30,7 +30,7 @@
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       font-family: $script;
       margin: 0 0 0.05em;
       line-height: 1em;
@@ -41,13 +41,8 @@
       }
 
       .amp {
-        display: block;
         font-size: 0.75em;
         line-height: 1.25em;
-
-        @include media($medium-up) {
-          display: inline-block;
-        }
       }
     }
 
@@ -65,7 +60,7 @@
   .credit {
     @include animation-delay(0.75s);
     @include animation-duration(3s);
-    @include position(absolute, null null 0.25em null);
+    @include position(fixed, null null 0.25em null);
 
     @include media($small-only) {
       text-align: center;
